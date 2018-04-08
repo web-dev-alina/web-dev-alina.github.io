@@ -44,7 +44,9 @@ header small {
 	margin-top: 20px;
 }
 .header-button {
-	box-shadow: : 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	display: inline-block;
+	text-decoration: none;
+	box-shadow: 10px 13px 40px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
 	color: #072b6f;
@@ -136,6 +138,7 @@ footer {
 	text-align: center;
 }
 .footer-button {
+	text-decoration: none;
 	display: inline-block;
 	border: 1px solid #fff;
 	background-color: transparent;
