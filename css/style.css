@@ -12,6 +12,11 @@ header {
 	padding-bottom: 22px;	
 	background-color: #3a7dfd;
 	color: #fff;
+	background: #3a7dfd; /* Old Browsers */
+	background: -webkit-linear-gradient(top,#3a7dfd,#dddddd);/*Safari 5.1-6*/
+	background: -o-linear-gradient(top,#3a7dfd,#dddddd); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(top,#3a7dfd,#dddddd); /*Fx 3.6-15*/
+    background: linear-gradient(to bottom, #3a7dfd, #dddddd); /*Standard*/
 }
 header small {
 	font-size: 12px;
@@ -20,7 +25,7 @@ header small {
 	margin-top: 9px;
 }
 .header-pretitle {
-	margin-top: 12px;
+	margin-top: 60px;
 }
 .header-logo {
 	width: 599px;
@@ -46,14 +51,21 @@ header small {
 .header-button {
 	display: inline-block;
 	text-decoration: none;
+	cursor: pointer;
 	box-shadow: 10px 13px 40px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #072b6f;
 	font-size: 18px;
 	font-weight: 700;
 	padding: 17px 55px;
 	margin-top: 33px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.header-button:hover {
+	box-shadow: none;
 }
 .header-button-block {
 	max-width: 210px;
@@ -110,7 +122,11 @@ footer {
 	background-color: #3a7dfd;
 	color: #fff;
 	padding-top: 60px;
-	padding-bottom: 110px;
+	padding-bottom: 80px;
+	background: -webkit-linear-gradient(bottom,#3a7dfd,#dddddd); /*Safari 5.1-6*/
+	background: -o-linear-gradient(bottom,#3a7dfd,#dddddd); /*Opera 11.1-12*/
+	background: -moz-linear-gradient(bottom,#3a7dfd,#dddddd); /*Fx 3.6-15*/
+    background: linear-gradient(to top, #3a7dfd, #dddddd); /*Standard*/
 }
 .social-block img {
 	width: 40px;
@@ -146,6 +162,13 @@ footer {
 	font-size: 18px;
 	border-radius: 50px;
 	padding: 12px 42px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+.footer-button:hover {
+	background-color: #fff;
+	color: #3a7dfd;
 }
 
 @media (max-width: 1200px) {
@@ -158,9 +181,6 @@ footer {
 	.header-logo {
 		display: none;
 	}
-	/*.col-lg-5 {
-		padding-left: 60px;
-	}*/
 	.header-pretitle {
 		margin-top: 10px;
 	}
